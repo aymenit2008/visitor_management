@@ -1,0 +1,59 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-08-03 12:35:31.517003",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "vis_date",
+  "vis_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "VIS-",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "vis_date",
+   "fieldtype": "Datetime",
+   "label": "Visit Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vis_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Visitor Name",
+   "reqd": 1
+  }
+ ],
+ "modified": "2021-08-03 12:44:45.469352",
+ "modified_by": "Administrator",
+ "module": "Visitor Management",
+ "name": "Visitors YM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

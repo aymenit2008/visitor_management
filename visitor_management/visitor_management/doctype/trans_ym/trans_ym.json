@@ -1,0 +1,112 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-08-03 15:06:55.333238",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "amended_from",
+  "vis_date",
+  "vis_name",
+  "ent_id",
+  "emp_id",
+  "emp_name",
+  "column_break_8",
+  "is_out",
+  "out_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "VIS-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trans YM",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "vis_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Visit Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vis_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Visitor Name",
+   "options": "Guest YM",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "vis_name.ent_id",
+   "fieldname": "ent_id",
+   "fieldtype": "Link",
+   "label": "Entity",
+   "options": "Entity YM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "emp_id",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "emp_id.employee_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Employee Nmae",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_out",
+   "fieldtype": "Check",
+   "label": "Is Out"
+  },
+  {
+   "fieldname": "out_date",
+   "fieldtype": "Datetime",
+   "label": "Out Date"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-08-04 10:56:36.711329",
+ "modified_by": "Administrator",
+ "module": "Visitor Management",
+ "name": "Trans YM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
