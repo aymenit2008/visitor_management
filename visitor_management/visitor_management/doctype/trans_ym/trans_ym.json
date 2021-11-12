@@ -59,16 +59,17 @@
   {
    "fieldname": "emp_id",
    "fieldtype": "Link",
+   "ignore_user_permissions": 1,
    "label": "Employee",
    "options": "Employee",
    "reqd": 1
   },
   {
    "fetch_from": "emp_id.employee_name",
+   "fetch_if_empty": 1,
    "fieldname": "emp_name",
    "fieldtype": "Data",
-   "label": "Employee Nmae",
-   "read_only": 1
+   "label": "Employee Nmae"
   },
   {
    "fieldname": "column_break_8",
@@ -87,8 +88,8 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2021-08-04 10:56:36.711329",
- "modified_by": "Administrator",
+ "modified": "2021-09-30 09:50:01.086107",
+ "modified_by": "aymen.alsurabi@yamaan.org",
  "module": "Visitor Management",
  "name": "Trans YM",
  "owner": "Administrator",
